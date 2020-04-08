@@ -16,5 +16,5 @@ extract_state:
 
 # Sync from source to target
 sync:
-	tap-mysql --config tap_mysql_config.json --properties source_properties.json | target-postgres --config target_postgres_config.json
+	tap-mysql --config tap_mysql_config.json --properties source_properties.json --state state.json | target-postgres --config target_postgres_config.json
 	

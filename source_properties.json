@@ -81,6 +81,201 @@
           }
         }
       ]
+    },
+    {
+      "tap_stream_id": "inventorydw-inventory_fact",
+      "table_name": "inventory_fact",
+      "schema": {
+        "properties": {
+          "InventoryKey": {
+            "inclusion": "automatic",
+            "minimum": -2147483648,
+            "maximum": 2147483647,
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "BranchPlantKey": {
+            "inclusion": "available",
+            "minimum": -2147483648,
+            "maximum": 2147483647,
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "DateKey": {
+            "inclusion": "available",
+            "minimum": -2147483648,
+            "maximum": 2147483647,
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "ItemMasterKey": {
+            "inclusion": "available",
+            "minimum": -2147483648,
+            "maximum": 2147483647,
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "TransTypeKey": {
+            "inclusion": "available",
+            "minimum": -2147483648,
+            "maximum": 2147483647,
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "CustVendorKey": {
+            "inclusion": "available",
+            "minimum": -2147483648,
+            "maximum": 2147483647,
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "UnitCost": {
+            "inclusion": "available",
+            "multipleOf": 0.0001,
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "Quantity": {
+            "inclusion": "available",
+            "multipleOf": 0.0001,
+            "type": [
+              "null",
+              "number"
+            ]
+          },
+          "ExtCost": {
+            "inclusion": "available",
+            "multipleOf": 0.01,
+            "type": [
+              "null",
+              "number"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "inventory_fact",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "replication-method": "INCREMENTAL",
+            "selected": true,
+            "replication-key": "InventoryKey",
+            "selected-by-default": false,
+            "database-name": "inventorydw",
+            "row-count": 3390,
+            "is-view": false,
+            "table-key-properties": [
+              "InventoryKey"
+            ]
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "InventoryKey"
+          ],
+          "metadata": {
+            "selected-by-default": true,
+            "sql-datatype": "int(11)"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "BranchPlantKey"
+          ],
+          "metadata": {
+            "selected-by-default": true,
+            "sql-datatype": "int(11)"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "DateKey"
+          ],
+          "metadata": {
+            "selected-by-default": true,
+            "sql-datatype": "int(11)"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ItemMasterKey"
+          ],
+          "metadata": {
+            "selected-by-default": true,
+            "sql-datatype": "int(11)"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "TransTypeKey"
+          ],
+          "metadata": {
+            "selected-by-default": true,
+            "sql-datatype": "int(11)"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "CustVendorKey"
+          ],
+          "metadata": {
+            "selected-by-default": true,
+            "sql-datatype": "int(11)"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "UnitCost"
+          ],
+          "metadata": {
+            "selected-by-default": true,
+            "sql-datatype": "decimal(12,4)"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "Quantity"
+          ],
+          "metadata": {
+            "selected-by-default": true,
+            "sql-datatype": "decimal(9,4)"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "ExtCost"
+          ],
+          "metadata": {
+            "selected-by-default": true,
+            "sql-datatype": "decimal(14,2)"
+          }
+        }
+      ]
     }
   ]
 }
