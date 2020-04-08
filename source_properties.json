@@ -1,0 +1,86 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "inventorydw-addr_cat_code1",
+      "table_name": "addr_cat_code1",
+      "schema": {
+        "properties": {
+          "AddrCatCodeKey": {
+            "inclusion": "automatic",
+            "minimum": -2147483648,
+            "maximum": 2147483647,
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "AddrCatCodeId": {
+            "inclusion": "available",
+            "maxLength": 4,
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "AddrCatDesc": {
+            "inclusion": "available",
+            "maxLength": 30,
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        },
+        "type": "object"
+      },
+      "stream": "addr_cat_code1",
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "row-count": 5,
+            "replication-method": "INCREMENTAL",
+            "replication-key": "AddrCatCodeKey",
+            "selected-by-default": false,
+            "database-name": "inventorydw",
+            "is-view": false,
+            "selected": true,
+            "table-key-properties": [
+              "AddrCatCodeKey"
+            ]
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "AddrCatCodeKey"
+          ],
+          "metadata": {
+            "selected-by-default": true,
+            "sql-datatype": "int(11)"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "AddrCatCodeId"
+          ],
+          "metadata": {
+            "selected-by-default": true,
+            "sql-datatype": "varchar(4)"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "AddrCatDesc"
+          ],
+          "metadata": {
+            "selected-by-default": true,
+            "sql-datatype": "varchar(30)"
+          }
+        }
+      ]
+    }
+  ]
+}

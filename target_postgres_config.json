@@ -1,0 +1,8 @@
+{
+    "postgres_host": "localhost",
+    "postgres_port": 5433,
+    "postgres_database": "northwind",
+    "postgres_username": "northwind_user",
+    "postgres_password": "thewindisblowing",
+    "postgres_schema": "northwind"
+}
