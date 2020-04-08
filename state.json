@@ -3,12 +3,12 @@
     "bookmarks": {
         "inventorydw-addr_cat_code1": {
             "replication_key": "AddrCatCodeKey",
-            "version": 1586364876594,
+            "version": 0,
             "replication_key_value": 8
         },
         "inventorydw-inventory_fact": {
             "replication_key": "InventoryKey",
-            "version": 1586364876613,
+            "version": 0,
             "replication_key_value": 0
         }
     }
